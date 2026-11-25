@@ -9,7 +9,7 @@ import re
 from pydantic import BaseModel, field_validator, Field
 
 
-# ── Allowed option lists (must match frontend) ──────────────────────────
+# ── Allowed option lists (matching frontend) ──────────────────────────
 
 GENDERS = ["Male", "Female", "Other"]
 

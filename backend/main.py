@@ -42,17 +42,17 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
-# CORS – allow the React frontend
+# CORS - all origins allowed
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # tighten in production
+    allow_origins=["*"], 
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
 
-# ── Helpers ─────────────────────────────────────────────────────────────
+# ── Helpers ────
 
 def _patient_to_response(p) -> dict:
     return {
