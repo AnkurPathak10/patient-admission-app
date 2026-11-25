@@ -99,7 +99,7 @@ patient-admission-app/
 ### 1. Clone the repo
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/AnkurPathak10/patient-admission-app
 cd patient-admission-app
 ```
 
@@ -177,25 +177,3 @@ VITE_API_URL=http://localhost:8000
 | `DELETE` | `/api/patients/:id` | Delete a patient |
 
 ---
-
-## ✅ What's Built (Everything!)
-
-- [x] Add a patient
-- [x] View list of all patients
-- [x] Filter by Ward, Department, Doctor
-- [x] Search patients by name
-- [x] Edit a patient
-- [x] Delete a patient (with confirmation)
-- [x] Mark a patient as Discharged
-- [x] Clean responsive design (mobile + tablet + desktop)
-- [x] Frontend validation with Zod
-- [x] Backend validation with Pydantic
-- [x] Clear error messages (inline in form + toast notifications)
-- [x] Dark mode with orange/amber + grey theme
-- [x] No authentication (as per requirements)
-- [x] Data persists after server restart (PostgreSQL)
-
-## ❌ Nothing Remaining
-
-All features from the task document have been implemented.
-
