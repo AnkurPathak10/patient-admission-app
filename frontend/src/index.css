@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+/* ── Custom Theme via Tailwind v4 @theme ─────────────────────────── */
+@theme {
+  --color-accent-50: #fff8e1;
+  --color-accent-100: #ffecb3;
+  --color-accent-200: #ffe082;
+  --color-accent-300: #ffd54f;
+  --color-accent-400: #ffca28;
+  --color-accent-500: #f5a623;
+  --color-accent-600: #e09000;
+  --color-accent-700: #c67c00;
+  --color-accent-800: #a86400;
+
+  --color-dark-bg: #121212;
+  --color-dark-secondary: #1e1e1e;
+  --color-dark-elevated: #252525;
+  --color-dark-card: #2a2a2a;
+  --color-dark-input: #333333;
+  --color-dark-border: #3d3d3d;
+  --color-dark-text: #f0f0f0;
+  --color-dark-muted: #a8a8a8;
+  --color-dark-faint: #707070;
+
+  --color-status-success: #4caf50;
+  --color-status-danger: #ef5350;
+}
+
+/* ── Base styles ─────────────────────────────────────────────────── */
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background: var(--color-dark-bg);
+  color: var(--color-dark-text);
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Spinner animation */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+.animate-spin-slow {
+  animation: spin 0.8s linear infinite;
+}
+
+/* Modal entrance */
+@keyframes modal-in {
+  from { opacity: 0; transform: scale(0.95) translateY(10px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+.animate-modal-in {
+  animation: modal-in 0.2s ease;
+}
+
+/* Custom scrollbar for dark mode */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-dark-secondary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-dark-border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
