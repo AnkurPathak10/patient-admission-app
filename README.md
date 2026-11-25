@@ -99,7 +99,7 @@ patient-admission-app/
 ### 1. Clone the repo
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/AnkurPathak10/patient-admission-app
 cd patient-admission-app
 ```
 
